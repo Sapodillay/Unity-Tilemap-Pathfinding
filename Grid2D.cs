@@ -2,10 +2,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+[RequireComponent(typeof(Tilemap))]
 public class Grid2D : MonoBehaviour
 {
-    public Vector3Int gridWorldSize;
-    public Vector3Int gridPosition;
+    Vector3Int gridWorldSize;
+    Vector3Int gridPosition;
 
     Tilemap _tileMap;
     Node[,] grid;
